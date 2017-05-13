@@ -9,12 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "METechs.Android", "METechs\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "METechs.iOS", "METechs\METechs.iOS\METechs.iOS.csproj", "{F2D000C8-1000-460A-A697-45C4AC3E5487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "METechs.UWP", "METechs\METechs.UWP\METechs.UWP.csproj", "{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		METechs\METechs\METechs.projitems*{563f7373-508e-4d92-ac79-3d061094d37f}*SharedItemsImports = 4
-		METechs\METechs\METechs.projitems*{cb13ab58-e019-40f0-acdc-f7c7abf23614}*SharedItemsImports = 4
 		METechs\METechs\METechs.projitems*{cecc1ef0-1f38-47b7-b7c0-841c027d1f9c}*SharedItemsImports = 13
 		METechs\METechs\METechs.projitems*{f2d000c8-1000-460a-a697-45c4ac3e5487}*SharedItemsImports = 4
 	EndGlobalSection
@@ -85,30 +82,6 @@ Global
 		{F2D000C8-1000-460A-A697-45C4AC3E5487}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{F2D000C8-1000-460A-A697-45C4AC3E5487}.Release|x64.ActiveCfg = Release|iPhone
 		{F2D000C8-1000-460A-A697-45C4AC3E5487}.Release|x86.ActiveCfg = Release|iPhone
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|ARM.ActiveCfg = Debug|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|ARM.Build.0 = Debug|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|ARM.Deploy.0 = Debug|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|iPhone.ActiveCfg = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x64.ActiveCfg = Debug|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x64.Build.0 = Debug|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x64.Deploy.0 = Debug|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x86.ActiveCfg = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x86.Build.0 = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Debug|x86.Deploy.0 = Debug|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|Any CPU.ActiveCfg = Release|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|ARM.ActiveCfg = Release|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|ARM.Build.0 = Release|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|ARM.Deploy.0 = Release|ARM
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|iPhone.ActiveCfg = Release|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x64.ActiveCfg = Release|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x64.Build.0 = Release|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x64.Deploy.0 = Release|x64
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x86.ActiveCfg = Release|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x86.Build.0 = Release|x86
-		{CB13AB58-E019-40F0-ACDC-F7C7ABF23614}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

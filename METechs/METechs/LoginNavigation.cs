@@ -81,7 +81,7 @@ namespace METechs.LoginNavigation
             //SqlDataAdapter da = new SqlDataAdapter();
             //SqlDataAdapter da = new SqlDataAdapter("select * from technicians where user_name ='" + user.Username + "' " + "and password='" +
             //user.Password + "' ", @"Data Source=localhost;Initial Catalog=TechsForMe;User ID=TestUser;Password=Rabbit2008;");
-            String connectionString = "Data Source=Chicago;Initial Catalog=TechsForMe;User ID=TestUser;Password=Rabbit2008;";
+            String connectionString = "Data Source=me2017.database.windows.net;Initial Catalog=MeTechs;User ID=clifford.mauer;Password=BlueRabbit2008;";
             String sql = "select * from technicians";
             SqlConnection cnn = new SqlConnection(connectionString);
             SqlCommand sqlCmd;
