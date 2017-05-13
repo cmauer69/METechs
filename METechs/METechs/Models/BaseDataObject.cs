@@ -7,7 +7,7 @@ namespace METechs.Models
     {
         public BaseDataObject()
         {
-            Id = Guid.NewGuid().ToString();
+            Id = "";
         }
 
         /// <summary>
@@ -18,16 +18,19 @@ namespace METechs.Models
         /// <summary>
         /// Azure created at time stamp
         /// </summary>
-        public DateTimeOffset CreatedAt { get; set; }
+        public String Name { get; set; }
 
-        /// <summary>
-        /// Azure UpdateAt timestamp for online/offline sync
-        /// </summary>
-        public DateTimeOffset UpdatedAt { get; set; }
+        public String Address1 { get; set; }
 
-        /// <summary>
-        /// Azure version for online/offline sync
-        /// </summary>
-        public string AzureVersion { get; set; }
+        public String Address2 { get; set; }
+
+        public String City { get; set; }
+
+        public String State { get; set; }
+
+        public String Zip { get; set; }
+
+        public String Phone { get; set; }
+
     }
 }
