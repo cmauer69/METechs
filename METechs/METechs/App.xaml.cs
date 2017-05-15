@@ -5,9 +5,12 @@ using METechs.Views;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace METechs
 {
-	public partial class App : Application
-	{
+    public partial class App : Application
+    {
         public static bool IsUserLoggedIn { get; set; }
+        public int clientid = 0;
+
+
         public App()
         {
             if (!IsUserLoggedIn)

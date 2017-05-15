@@ -37,6 +37,13 @@ namespace METechs.LoginNavigation
             grid.Children.Add(btnClients,0,7);
 
             btnScheduled.Clicked += On_btnScheduled_ClickedAsync;
+            btnComplete.Clicked += On_btnComplete_ClickedAsync;
+            btnEarnings.Clicked += On_btnEarnings_ClickedAsync;
+            btnMarket.Clicked += On_btnMarket_ClickedAsync;
+            btnJobs.Clicked += On_btnJobs_ClickedAsync;
+            btnClients.Clicked += On_btnClient_ClickedAsync;
+            btnInvoiced.Clicked += On_btnInvoiced_ClickedAsync;
+            btnItinery.Clicked += On_btnItinery_ClickedAsync;
 
 
             Content = grid;
@@ -70,11 +77,37 @@ namespace METechs.LoginNavigation
             //   }
             //};
         }
-
+        private async void On_btnClient_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ClientViewPage());
+        }
+        private async void On_btnItinery_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ItineryViewPage());
+        }
+        private async void On_btnInvoiced_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InvoicedViewPage());
+        }
+        private async void On_btnEarnings_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EarningsViewPage());
+        }
+        private async void On_btnJobs_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new JobsViewPage());
+        }
+        private async void On_btnMarket_ClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MarketViewPage());
+        }
+        private async void On_btnComplete_ClickedAsync(object sender, EventArgs e)
+        {
+             await Navigation.PushAsync(new CompleteViewPage());
+        }
         private async void On_btnScheduled_ClickedAsync(object sender, EventArgs e)
         {
-            //await DisplayAlert("Scheduled button has been clicked.");
-            throw new NotImplementedException();
+            await Navigation.PushAsync(new ScheduledViewPage());
         }
 
         async void OnLogoutButtonClicked(object sender, EventArgs e)
