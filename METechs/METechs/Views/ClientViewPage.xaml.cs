@@ -31,10 +31,16 @@ namespace METechs.Views
 
         async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            string clientid ="";
             if (e.SelectedItem == null)
                 return;
+            //Once a client is selected, start the details page
 
-            await DisplayAlert("Selected", e.SelectedItem.ToString(), "OK");
+            //set the clientid that will be in the app object
+            clientid = e.SelectedItem.ToString();
+
+            await Navigation.PushAsync(new ClientViewDetailPage(clientid));
+            //await DisplayAlert("Selected", e.SelectedItem.ToString(), "OK");
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
@@ -54,7 +60,7 @@ namespace METechs.Views
             var Items = new ObservableCollection<Item>();
 
             String connectionString = "Data Source=me2017.database.windows.net;Initial Catalog=MeTechs;User ID=clifford.mauer;Password=BlueRabbit2008;";
-            String sql = "select * from clients";
+            String sql = "SELECT [id],rtrim([name]) as name,[address1],[address2],[city],[zip],[state],[phone] FROM[dbo].[Clients]";
             SqlConnection cnn = new SqlConnection(connectionString);
             SqlCommand sqlCmd;
             SqlDataAdapter da = new SqlDataAdapter();
@@ -77,7 +83,7 @@ namespace METechs.Views
                     Name = (string)row["name"],
                     City = (string)row["city"]
                 });
-                Items.Add(new Item { Name = (String)row["name"]  +"-"+(string)row["city"], Phone = (string)row["phone"] });
+                Items.Add(new Item { Id_Client = Convert.ToString((int)row["id"]),Name = (String)row["name"]  +"-"+(string)row["city"], Phone = (string)row["phone"]  });
             } 
 
 
@@ -128,7 +134,8 @@ namespace METechs.Views
         {
             public string Name { get; set; }
             public string Phone { get; set; }
-            public override string ToString() => Name;
+            public override string ToString() => Id_Client;
+            public string Id_Client { get; set; }
         }
 
         public class Grouping<K, T> : ObservableCollection<T>

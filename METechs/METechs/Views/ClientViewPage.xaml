@@ -38,11 +38,13 @@
       <DataTemplate>
         <ViewCell>
           <StackLayout>
-            <Label Text="{Binding Name}" 
+           <Label Text="{Binding Id_Client}"
+                   IsVisible="False"/>
+           <Label Text="{Binding Name}" 
                    Style="{DynamicResource ListItemTextStyle}" />
-                        <Label Text="{Binding Phone}" 
+           <Label Text="{Binding Phone}" 
                    Style="{DynamicResource ListItemDetailTextStyle}"/>
-                    </StackLayout>
+                     </StackLayout>
         </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>

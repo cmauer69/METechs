@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="METechs.Views.ClientViewDetailPage"
+             Title="Business Details">
+    
+
+    <StackLayout Padding="20, 0">
+        <Entry x:Name="BusinessName" Text="{Binding Name}" Placeholder="Enter Name" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="Address1" Text="{Binding Address1}" Placeholder="Enter Address1" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="Address2" Text="{Binding Address2}" Placeholder="Enter Address2" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="City" Text="{Binding City}" Placeholder="Enter City" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="Zip" Text="{Binding Zip}" Placeholder="Enter Zip" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="State" Text="{Binding State}" Placeholder="Enter State" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="Phone" Text="{Binding Phone}" Placeholder="Enter Phone" VerticalOptions="CenterAndExpand" />
+        <Button Text="Done" IsEnabled="{Binding IsValid}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OnDoneButtonClickedAsync" />
+    </StackLayout>
+</ContentPage>

@@ -32,11 +32,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseDataObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Clients.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Scheduled.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SignUpPageCS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)user.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ClientsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ClientViewDetailPage.xaml.cs">
+      <DependentUpon>ClientViewDetailPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ClientViewPage.xaml.cs">
       <DependentUpon>ClientViewPage.xaml</DependentUpon>
@@ -138,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\JobsViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ClientViewDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
